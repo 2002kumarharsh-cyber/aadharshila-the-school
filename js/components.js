@@ -6,6 +6,16 @@ document.addEventListener('DOMContentLoaded', () => {
     const depth = parseInt(depthAttr || '0', 10);
     const rel = '../'.repeat(depth);
 
+    // 1.5 Inject Favicon dynamically
+    let faviconLink = document.querySelector("link[rel~='icon']");
+    if (!faviconLink) {
+        faviconLink = document.createElement('link');
+        faviconLink.rel = 'icon';
+        faviconLink.type = 'image/svg+xml';
+        faviconLink.href = `${rel}assets/brand/logo.svg`;
+        document.head.appendChild(faviconLink);
+    }
+
     // 2. Render Header Component
     const headerPlaceholder = document.getElementById('header-placeholder');
     if (headerPlaceholder) {
