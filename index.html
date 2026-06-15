@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to Aadharshila The School - A premium CBSE-affiliated K-12 school focusing on academic excellence, modern pedagogy, and holistic student growth.">
+    <title>Home | Aadharshila The School</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Global CSS Stylesheets -->
+    <link rel="stylesheet" href="./css/variables.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/components.css">
+</head>
+<body data-page-depth="0">
+    <!-- Reusable Dynamic Header Injected by JS -->
+    <div id="header-placeholder"></div>
+
+    <!-- Main Content Area -->
+    <main id="main-content">
+        <!-- 1. Hero Section Slider -->
+        <section class="page-hero" style="padding: var(--space-24) 0; text-align: center; position: relative;">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content animate-fade-up">
+                <span class="btn btn-accent btn-sm" style="margin-bottom: var(--space-4); pointer-events: none; border-radius: var(--radius-sm); font-size: 11px; letter-spacing: 0.05em; text-transform: uppercase;">
+                    <i class="fa-solid fa-graduation-cap"></i> Admissions Open 2026-27 | CBSE K-12
+                </span>
+                <h1 class="page-title" style="font-size: clamp(2.5rem, 5vw, 4.2rem); margin-bottom: var(--space-4); font-weight: 800; line-height: 1.1;">
+                    Growing Hand in Hand, <br><span style="color: var(--color-secondary);">Leading with Purpose</span>
+                </h1>
+                <p style="color: rgba(255,255,255,0.85); font-size: var(--font-size-lg); max-width: 800px; margin: 0 auto var(--space-8) auto; line-height: var(--lh-relaxed);">
+                    At Aadharshila, we translate curiosity into structured knowledge. Our nature-aligned campus merges advanced STEM inquiry with strong values to cultivate tomorrow's leaders.
+                </p>
+                <div style="display: flex; gap: var(--space-4); justify-content: center; flex-wrap: wrap; margin-bottom: var(--space-12);">
+                    <a href="./admissions/enquiry.html" class="btn btn-primary btn-lg">Apply Online Now <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="./admissions/enquiry.html#visit" class="btn btn-outline-white btn-lg">Book a Campus Tour <i class="fa-solid fa-calendar"></i></a>
+                </div>
+            </div>
+            
+            <!-- Reusable Managed Image Block (Crescent Border styling) -->
+            <div class="container hero-content">
+                <div class="image-wrapper crescent-border" data-category="Campus" data-recommended-w="1600" data-recommended-h="600" style="max-width: 1100px; margin: 0 auto; height: 380px; box-shadow: var(--shadow-xl);">
+                    <span class="image-label">Campus Main Courtyard</span>
+                    <span class="image-specs">Recommended: 1600x600px</span>
+                    <img src="./assets/images/campus_main.jpg" alt="Aadharshila School main campus buildings and crescent garden pathways" class="managed-image" onerror="handleImageError(this)">
+                    <div class="image-placeholder"><i class="fa-solid fa-school"></i><span>Front facade of modern school campus</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Statistics Grid -->
+        <section class="section" style="background-color: var(--color-surface); padding: var(--space-12) 0; border-bottom: 1px solid var(--color-border-light);">
+            <div class="container">
+                <div class="grid grid-4" style="text-align: center;">
+                    <div class="placeholder-card" style="border-radius: var(--radius-md); border-color: var(--color-border-light);">
+                        <h2 style="font-size: var(--font-size-4xl); color: var(--color-secondary); font-weight: var(--weight-extrabold); margin-bottom: 5px;">1200+</h2>
+                        <p style="font-weight: var(--weight-semibold); color: var(--color-primary); font-size: var(--font-size-sm); margin: 0;">Enrolled Students</p>
+                    </div>
+                    <div class="placeholder-card" style="border-radius: var(--radius-md); border-color: var(--color-border-light);">
+                        <h2 style="font-size: var(--font-size-4xl); color: var(--color-primary); font-weight: var(--weight-extrabold); margin-bottom: 5px;">100%</h2>
+                        <p style="font-weight: var(--weight-semibold); color: var(--color-primary); font-size: var(--font-size-sm); margin: 0;">Board Exam Success</p>
+                    </div>
+                    <div class="placeholder-card" style="border-radius: var(--radius-md); border-color: var(--color-border-light);">
+                        <h2 style="font-size: var(--font-size-4xl); color: var(--color-secondary); font-weight: var(--weight-extrabold); margin-bottom: 5px;">85+</h2>
+                        <p style="font-weight: var(--weight-semibold); color: var(--color-primary); font-size: var(--font-size-sm); margin: 0;">Qualified Educators</p>
+                    </div>
+                    <div class="placeholder-card" style="border-radius: var(--radius-md); border-color: var(--color-border-light);">
+                        <h2 style="font-size: var(--font-size-4xl); color: var(--color-primary); font-weight: var(--weight-extrabold); margin-bottom: 5px;">15+</h2>
+                        <p style="font-weight: var(--weight-semibold); color: var(--color-primary); font-size: var(--font-size-sm); margin: 0;">Sports Academies</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Why Choose Us (6 Features) -->
+        <section class="section" style="background-color: var(--color-bg);">
+            <div class="container">
+                <div style="text-align: center; margin-bottom: var(--space-16);">
+                    <span style="color: var(--color-secondary); font-weight: var(--weight-bold); font-size: var(--font-size-sm); text-transform: uppercase; letter-spacing: 0.1em;">Educational Pillars</span>
+                    <h2 style="font-size: var(--font-size-3xl); margin-top: var(--space-2);">Why Aadharshila Stands Apart</h2>
+                </div>
+                <div class="grid grid-3">
+                    <div class="placeholder-card" style="border-radius: var(--radius-lg);">
+                        <i class="fa-solid fa-seedling" style="font-size: var(--font-size-3xl); color: var(--color-secondary); margin-bottom: var(--space-4);"></i>
+                        <h3>Academic Excellence</h3>
+                        <p>A rigorous, inquiry-based curriculum fully aligned with CBSE and NEP 2020 standards, focusing on conceptual clarity.</p>
+                    </div>
+                    <div class="placeholder-card" style="border-radius: var(--radius-lg);">
+                        <i class="fa-solid fa-users" style="font-size: var(--font-size-3xl); color: var(--color-primary); margin-bottom: var(--space-4);"></i>
+                        <h3>Collaborative Spirit</h3>
+                        <p>Inspired by our logo, we cultivate collaborative peer-learning groups, team projects, and community volunteer drives.</p>
+                    </div>
+                    <div class="placeholder-card" style="border-radius: var(--radius-lg);">
+                        <i class="fa-solid fa-microscope" style="font-size: var(--font-size-3xl); color: var(--color-secondary); margin-bottom: var(--space-4);"></i>
+                        <h3>STEM Tinkering Spaces</h3>
+                        <p>Fully equipped computer labs and Tinkering areas featuring electronics models, robotic parts, and coding tools.</p>
+                    </div>
+                    <div class="placeholder-card" style="border-radius: var(--radius-lg);">
+                        <i class="fa-solid fa-shield-heart" style="font-size: var(--font-size-3xl); color: var(--color-primary); margin-bottom: var(--space-4);"></i>
+                        <h3>Secure Eco-Campus</h3>
+                        <p>Solar-powered administrative blocks, CCTV cameras, medical infirmary desks, and GPS-enabled school bus networks.</p>
+                    </div>
+                    <div class="placeholder-card" style="border-radius: var(--radius-lg);">
+                        <i class="fa-solid fa-award" style="font-size: var(--font-size-3xl); color: var(--color-secondary); margin-bottom: var(--space-4);"></i>
+                        <h3>Distinguished Mentors</h3>
+                        <p>Experienced subject teachers regularly trained in child developmental psychology and active pedagogy layouts.</p>
+                    </div>
+                    <div class="placeholder-card" style="border-radius: var(--radius-lg);">
+                        <i class="fa-solid fa-graduation-cap" style="font-size: var(--font-size-3xl); color: var(--color-primary); margin-bottom: var(--space-4);"></i>
+                        <h3>University Counselling</h3>
+                        <p>Structured support helping high school students build portfolios, apply to top colleges, and clear JEE/NEET/SAT boards.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Leadership Messages -->
+        <section class="section" style="background-color: var(--color-surface);">
+            <div class="container">
+                <div class="grid grid-2" style="gap: var(--space-16); align-items: center;">
+                    <!-- Crescent border image frame -->
+                    <div class="image-wrapper crescent-border" data-category="Faculty" data-recommended-w="600" data-recommended-h="500" style="height: 380px;">
+                        <span class="image-label">Dr. Devendra Shastri</span>
+                        <span class="image-specs">600x500px</span>
+                        <img src="./assets/images/director.jpg" alt="Dr. Devendra Kumar Shastri, Founder Director of Aadharshila School" class="managed-image" onerror="handleImageError(this)">
+                        <div class="image-placeholder"><i class="fa-solid fa-user-tie"></i><span>Director Dr. Devendra Kumar Shastri</span></div>
+                    </div>
+                    <div>
+                        <span style="color: var(--color-secondary); font-weight: var(--weight-bold); font-size: var(--font-size-sm); text-transform: uppercase; letter-spacing: 0.05em;">Founder & Director</span>
+                        <h2 style="margin-top: var(--space-2);">Director's Vision</h2>
+                        <p style="font-style: italic; font-size: var(--font-size-md); color: var(--color-primary); margin-bottom: var(--space-4); border-left: 3px solid var(--color-secondary); padding-left: var(--space-4); font-family: var(--font-heading); font-weight: var(--weight-semibold);">
+                            "Education is not the learning of facts, but the training of the mind to think."
+                        </p>
+                        <p>Welcome to Aadharshila. Our vision is to create a dynamic learning ecosystem that cultivates intellectual curiosity, character integrity, and standard empathy in our students. We strive to provide premium facilities that foster design thinking and analytical competencies...</p>
+                        <a href="./about/message-director.html" class="btn btn-primary">Read Complete Message <i class="fa-solid fa-chevron-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="grid grid-2" style="gap: var(--space-16); align-items: center; margin-top: var(--space-20);">
+                    <div style="order: 2;">
+                        <div class="image-wrapper crescent-border-reverse" data-category="Faculty" data-recommended-w="600" data-recommended-h="500" style="height: 380px;">
+                            <span class="image-label">Mrs. Anjali Mehta</span>
+                            <span class="image-specs">600x500px</span>
+                            <img src="./assets/images/principal.jpg" alt="Mrs. Anjali Mehta, Principal of Aadharshila School" class="managed-image" onerror="handleImageError(this)">
+                            <div class="image-placeholder"><i class="fa-solid fa-user-nurse"></i><span>Principal Mrs. Anjali Mehta</span></div>
+                        </div>
+                    </div>
+                    <div style="order: 1;">
+                        <span style="color: var(--color-secondary); font-weight: var(--weight-bold); font-size: var(--font-size-sm); text-transform: uppercase; letter-spacing: 0.05em;">Principal's Address</span>
+                        <h2 style="margin-top: var(--space-2);">Principal's Message</h2>
+                        <p style="font-style: italic; font-size: var(--font-size-md); color: var(--color-primary); margin-bottom: var(--space-4); border-left: 3px solid var(--color-secondary); padding-left: var(--space-4); font-family: var(--font-heading); font-weight: var(--weight-semibold);">
+                            "We aim to inspire academic passion, moral resilience, and standard leadership."
+                        </p>
+                        <p>At Aadharshila, we place children at the center of the learning paradigm. Our pedagogy integrates conceptual theory with practical labs and co-curricular projects, giving children room to learn, design, experiment, and succeed...</p>
+                        <a href="./about/message-principal.html" class="btn btn-primary">Read Complete Address <i class="fa-solid fa-chevron-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Academic Stages preview -->
+        <section class="section" style="background-color: var(--color-bg);">
+            <div class="container">
+                <div style="text-align: center; margin-bottom: var(--space-16);">
+                    <span style="color: var(--color-secondary); font-weight: var(--weight-bold); text-transform: uppercase;">Curriculum Framework</span>
+                    <h2 style="margin-top: var(--space-2);">Our Academic Divisions (NEP 2020)</h2>
+                </div>
+                <div class="grid grid-4">
+                    <div class="placeholder-card" style="text-align: center; border-radius: var(--radius-lg);">
+                        <div class="circle-badge" style="width: 50px; height: 50px; background-color: var(--color-primary-lightest); color: var(--color-primary); font-weight: bold; font-family: var(--font-heading); margin-bottom: var(--space-4);">F</div>
+                        <h4>Foundational Stage</h4>
+                        <p style="font-size: var(--font-size-xs);">Nursery & KG. Sensory play structures, Montessori card blocks, basic language skills, and motor coordinations.</p>
+                        <a href="./academics/foundational.html" style="font-size: var(--font-size-xs); font-weight: bold; color: var(--color-secondary);">Learn More &rarr;</a>
+                    </div>
+                    <div class="placeholder-card" style="text-align: center; border-radius: var(--radius-lg);">
+                        <div class="circle-badge" style="width: 50px; height: 50px; background-color: var(--color-secondary-lightest); color: var(--color-secondary); font-weight: bold; font-family: var(--font-heading); margin-bottom: var(--space-4);">P</div>
+                        <h4>Primary Stage</h4>
+                        <p style="font-size: var(--font-size-xs);">Grades 1 to 5. Conceptual clarity, math boards logic, environment excursions, reading clinics, and arts projects.</p>
+                        <a href="./academics/primary.html" style="font-size: var(--font-size-xs); font-weight: bold; color: var(--color-secondary);">Learn More &rarr;</a>
+                    </div>
+                    <div class="placeholder-card" style="text-align: center; border-radius: var(--radius-lg);">
+                        <div class="circle-badge" style="width: 50px; height: 50px; background-color: var(--color-primary-lightest); color: var(--color-primary); font-weight: bold; font-family: var(--font-heading); margin-bottom: var(--space-4);">M</div>
+                        <h4>Middle School</h4>
+                        <p style="font-size: var(--font-size-xs);">Grades 6 to 8. Core sciences, equations logic, civics, coding labs, and foreign language options.</p>
+                        <a href="./academics/middle.html" style="font-size: var(--font-size-xs); font-weight: bold; color: var(--color-secondary);">Learn More &rarr;</a>
+                    </div>
+                    <div class="placeholder-card" style="text-align: center; border-radius: var(--radius-lg);">
+                        <div class="circle-badge" style="width: 50px; height: 50px; background-color: var(--color-secondary-lightest); color: var(--color-secondary); font-weight: bold; font-family: var(--font-heading); margin-bottom: var(--space-4);">S</div>
+                        <h4>Secondary Stage</h4>
+                        <p style="font-size: var(--font-size-xs);">Grades 9 to 12. Advanced Stream Choices (Science, Commerce, Humanities), CBSE pre-boards, and placements counselling.</p>
+                        <a href="./academics/senior.html" style="font-size: var(--font-size-xs); font-weight: bold; color: var(--color-secondary);">Learn More &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Infrastructure & Facilities -->
+        <section class="section" style="background-color: var(--color-surface);">
+            <div class="container">
+                <div style="text-align: center; margin-bottom: var(--space-16);">
+                    <span style="color: var(--color-secondary); font-weight: var(--weight-bold); text-transform: uppercase;">Campus Facilities</span>
+                    <h2 style="margin-top: var(--space-2);">World-Class Infrastructure</h2>
+                </div>
+                <div class="grid grid-3">
+                    <div class="placeholder-card" style="padding: 0; overflow: hidden; border-radius: var(--radius-lg);">
+                        <div class="image-wrapper" data-category="Classrooms" data-recommended-w="400" data-recommended-h="250" style="aspect-ratio: 16/10; border-radius: 0;">
+                            <span class="image-label">Classroom</span>
+                            <img src="./assets/images/smart_classroom.jpg" alt="Interactive smart classroom setup" class="managed-image" onerror="handleImageError(this)">
+                            <div class="image-placeholder"><i class="fa-solid fa-desktop"></i><span>Smart Collaborative Classroom</span></div>
+                        </div>
+                        <div style="padding: var(--space-6);">
+                            <h3>Smart Classrooms</h3>
+                            <p style="font-size: var(--font-size-xs);">Air-conditioned learning zones featuring digital boards and collaborative desks designed for interactive lessons.</p>
+                            <a href="./infrastructure/index.html" style="font-size: var(--font-size-xs); font-weight: var(--weight-bold); color: var(--color-secondary);">Explore Space &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="placeholder-card" style="padding: 0; overflow: hidden; border-radius: var(--radius-lg);">
+                        <div class="image-wrapper" data-category="Laboratories" data-recommended-w="400" data-recommended-h="250" style="aspect-ratio: 16/10; border-radius: 0;">
+                            <span class="image-label">Science Lab</span>
+                            <img src="./assets/images/science_lab.jpg" alt="Physics and chemistry laboratory station" class="managed-image" onerror="handleImageError(this)">
+                            <div class="image-placeholder"><i class="fa-solid fa-flask"></i><span>STEM subject laboratories</span></div>
+                        </div>
+                        <div style="padding: var(--space-6);">
+                            <h3>Advanced STEM Labs</h3>
+                            <p style="font-size: var(--font-size-xs);">Dedicated experiment zones for physics, chemistry, biology, computer operations, and robotic designs.</p>
+                            <a href="./infrastructure/labs.html" style="font-size: var(--font-size-xs); font-weight: var(--weight-bold); color: var(--color-secondary);">Explore Space &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="placeholder-card" style="padding: 0; overflow: hidden; border-radius: var(--radius-lg);">
+                        <div class="image-wrapper" data-category="Library" data-recommended-w="400" data-recommended-h="250" style="aspect-ratio: 16/10; border-radius: 0;">
+                            <span class="image-label">Library</span>
+                            <img src="./assets/images/library.jpg" alt="Central school library and study tables" class="managed-image" onerror="handleImageError(this)">
+                            <div class="image-placeholder"><i class="fa-solid fa-book-open"></i><span>Central library bookshelves</span></div>
+                        </div>
+                        <div style="padding: var(--space-6);">
+                            <h3>Knowledge Resource Centre</h3>
+                            <p style="font-size: var(--font-size-xs);">A library houses over 10,000 reference volumes, study tables, and digital database subscriptions.</p>
+                            <a href="./infrastructure/library.html" style="font-size: var(--font-size-xs); font-weight: var(--weight-bold); color: var(--color-secondary);">Explore Space &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. Achievements section -->
+        <section class="section" style="background-color: var(--color-bg);">
+            <div class="container">
+                <div style="text-align: center; margin-bottom: var(--space-16);">
+                    <span style="color: var(--color-secondary); font-weight: var(--weight-bold); text-transform: uppercase;">Laurels</span>
+                    <h2 style="margin-top: var(--space-2);">Celebrating Excellence</h2>
+                </div>
+                <div class="grid grid-3">
+                    <div class="placeholder-card" style="border-top: 4px solid var(--color-primary); border-radius: var(--radius-lg);">
+                        <span class="badge" style="background-color: var(--color-primary-lightest); color: var(--color-primary); font-size: 10px; font-weight: bold; padding: 2px 8px; border-radius: 4px;">Academic Merit</span>
+                        <h3 style="margin-top: 10px;">CBSE Board Results</h3>
+                        <p style="font-size: var(--font-size-sm);">Outstanding academic pass record, with our senior science toppers scoring 99.2% aggregate in the fictional board listings.</p>
+                    </div>
+                    <div class="placeholder-card" style="border-top: 4px solid var(--color-primary); border-radius: var(--radius-lg);">
+                        <span class="badge" style="background-color: var(--color-primary-lightest); color: var(--color-primary); font-size: 10px; font-weight: bold; padding: 2px 8px; border-radius: 4px;">STEM Innovation</span>
+                        <h3 style="margin-top: 10px;">National Robotics Award</h3>
+                        <p style="font-size: var(--font-size-sm);">First place winner in Senior Category for autonomous maze solver designs at the national level championship.</p>
+                    </div>
+                    <div class="placeholder-card" style="border-top: 4px solid var(--color-primary); border-radius: var(--radius-lg);">
+                        <span class="badge" style="background-color: var(--color-primary-lightest); color: var(--color-primary); font-size: 10px; font-weight: bold; padding: 2px 8px; border-radius: 4px;">Athletics Trophy</span>
+                        <h3 style="margin-top: 10px;">State Swimming Gold</h3>
+                        <p style="font-size: var(--font-size-sm);">Under-17 girls relay team won gold in CBSE State Meet, qualifying for nationals in Bhopal.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. Gallery Preview -->
+        <section class="section" style="background-color: var(--color-surface);">
+            <div class="container">
+                <div style="text-align: center; margin-bottom: var(--space-16);">
+                    <span style="color: var(--color-secondary); font-weight: var(--weight-bold); text-transform: uppercase;">Visual Showcase</span>
+                    <h2 style="margin-top: var(--space-2);">Glimpses of School Life</h2>
+                </div>
+                <div class="grid grid-3">
+                    <div class="image-wrapper crescent-border" data-category="Events" data-recommended-w="500" data-recommended-h="350" style="height: 240px;">
+                        <span class="image-label">Sports Day Preview</span>
+                        <img src="./assets/images/sports_day_preview.jpg" alt="Students in track suits running on school field" class="managed-image" onerror="handleImageError(this)">
+                        <div class="image-placeholder"><i class="fa-solid fa-running"></i><span>Sports Day Run</span></div>
+                    </div>
+                    <div class="image-wrapper crescent-border" data-category="Events" data-recommended-w="500" data-recommended-h="350" style="height: 240px;">
+                        <span class="image-label">Annual Play Preview</span>
+                        <img src="./assets/images/annual_day_preview.jpg" alt="Students acting on stage under stage lighting" class="managed-image" onerror="handleImageError(this)">
+                        <div class="image-placeholder"><i class="fa-solid fa-masks-theater"></i><span>Annual Theatre Play</span></div>
+                    </div>
+                    <div class="image-wrapper crescent-border" data-category="Classrooms" data-recommended-w="500" data-recommended-h="350" style="height: 240px;">
+                        <span class="image-label">Art Contest Preview</span>
+                        <img src="./assets/images/art_exhibit_preview.jpg" alt="Student paintings displayed on panels" class="managed-image" onerror="handleImageError(this)">
+                        <div class="image-placeholder"><i class="fa-solid fa-palette"></i><span>Art Competition Gallery</span></div>
+                    </div>
+                </div>
+                <div style="text-align: center; margin-top: var(--space-10);">
+                    <a href="./gallery/index.html" class="btn btn-outline">Explore Photo Gallery <i class="fa-solid fa-images"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 9. Admissions CTA Banner -->
+        <section class="section" style="background-color: var(--color-primary); color: var(--color-surface); text-align: center; position: relative; overflow: hidden;">
+            <div class="hero-overlay" style="border-color: rgba(255,255,255,0.05);"></div>
+            <div class="container hero-content animate-fade-up">
+                <h2 style="color: var(--color-accent); font-weight: var(--weight-extrabold); font-size: var(--font-size-3xl);">Admission Open for Session 2026-27</h2>
+                <p style="color: rgba(255,255,255,0.9); margin-bottom: var(--space-8); max-width: 600px; margin-left: auto; margin-right: auto; margin-top: var(--space-3);">
+                    Secure your child's developmental path early. Limited seats available in Foundational Stage and selective middle school brackets.
+                </p>
+                <div style="display: flex; gap: var(--space-4); justify-content: center; flex-wrap: wrap;">
+                    <a href="./admissions/enquiry.html" class="btn btn-primary btn-lg">Submit Enquiry Form <i class="fa-solid fa-paper-plane"></i></a>
+                    <a href="./admissions/index.html" class="btn btn-outline-white btn-lg">Read Fee Policy & Age Terms</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Reusable Dynamic Footer Injected by JS -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Core Script Files -->
+    <script src="./js/components.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

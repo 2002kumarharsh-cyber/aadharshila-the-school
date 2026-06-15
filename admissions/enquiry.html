@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Submit an enquiry form to schedule a campus tour or consult with our admissions team.">
+    <title>Online Admissions Enquiry | Aadharshila The School</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Global CSS Stylesheets -->
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/components.css">
+</head>
+<body data-page-depth="1">
+    <!-- Reusable Dynamic Header Injected by JS -->
+    <div id="header-placeholder"></div>
+
+    <!-- Main Content Area -->
+    <main id="main-content">
+        <section class="page-hero">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <nav class="breadcrumb">
+                    <a href="../index.html">Home</a> &gt; <a href="./index.html">Admissions</a> &gt; <span>Enquiry</span>
+                </nav>
+                <h1 class="page-title">Admissions Enquiry & Form</h1>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <div class="grid grid-2" style="gap: var(--space-12); align-items: flex-start;">
+                    <div>
+                        <h2>Submit an Admission Enquiry</h2>
+                        <p>Please complete this form to schedule a campus tour, consult with our admissions team, or download the e-brochure. Our office will respond within 24 working hours.</p>
+                        
+                        <div class="placeholder-card" style="margin-top: var(--space-6);">
+                            <h4>Admissions Office Helpline</h4>
+                            <p style="font-size: var(--font-size-sm); margin-bottom: 0;">
+                                <i class="fa-solid fa-phone" style="color: var(--color-secondary);"></i> Call: +91 98765 43210 (9:00 AM - 3:00 PM)<br>
+                                <i class="fa-solid fa-envelope" style="color: var(--color-secondary);"></i> Email: admissions@aadharshilaschool.edu.in
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="placeholder-card">
+                        <form id="enquiry-form" class="form-grid" onsubmit="handleFormSubmit(event)">
+                            <div class="form-group">
+                                <label for="child-name">Child's Full Name *</label>
+                                <input type="text" id="child-name" class="form-control" required>
+                                <span class="form-error">Please enter name</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="child-dob">Date of Birth *</label>
+                                <input type="date" id="child-dob" class="form-control" required>
+                                <span class="form-error">Date is required</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="target-grade">Grade Applied For *</label>
+                                <select id="target-grade" class="form-control" required>
+                                    <option value="">Select Grade</option>
+                                    <option value="nursery">Nursery</option>
+                                    <option value="kg">KG</option>
+                                    <option value="1">Grade 1</option>
+                                    <option value="6">Grade 6</option>
+                                    <option value="9">Grade 9</option>
+                                    <option value="11">Grade 11</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="parent-name">Parent / Guardian Name *</label>
+                                <input type="text" id="parent-name" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="parent-phone">Mobile Phone Number *</label>
+                                <input type="tel" id="parent-phone" class="form-control" pattern="^[0-9]{10}$" placeholder="10 Digit Number" required>
+                                <span class="form-error">Enter a valid 10-digit number</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="parent-email">Email Address *</label>
+                                <input type="email" id="parent-email" class="form-control" required>
+                            </div>
+                            
+                            <div class="form-group form-group-full">
+                                <label for="enquiry-type">What would you like to do? *</label>
+                                <select id="enquiry-type" class="form-control" required>
+                                    <option value="brochure">Download E-Brochure Only</option>
+                                    <option value="visit">Schedule Campus Tour Visit</option>
+                                    <option value="callback">Request Academic Callback</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group form-group-full">
+                                <label for="message-text">Message / Additional Comments</label>
+                                <textarea id="message-text" rows="3" class="form-control" placeholder="Share any specific queries..."></textarea>
+                            </div>
+                            
+                            <div class="form-group form-group-full">
+                                <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Inquiry <i class="fa-solid fa-paper-plane"></i></button>
+                            </div>
+                        </form>
+                        <div id="form-success" style="display: none; text-align: center; padding: var(--space-8); color: var(--color-success);">
+                            <i class="fa-solid fa-circle-check" style="font-size: var(--font-size-3xl);"></i>
+                            <h3 style="margin-top: var(--space-4);">Inquiry Submitted Successfully!</h3>
+                            <p style="font-size: var(--font-size-sm); color: var(--color-text-muted);">Thank you. Our admissions coordinator will get in touch with you shortly.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script>
+            function handleFormSubmit(event) {
+                event.preventDefault();
+                const form = document.getElementById('enquiry-form');
+                const successDiv = document.getElementById('form-success');
+                if (form.checkValidity()) {
+                    form.style.display = 'none';
+                    successDiv.style.display = 'block';
+                } else {
+                    form.querySelectorAll('.form-control').forEach(input => {
+                        if (!input.checkValidity()) {
+                            input.classList.add('is-invalid');
+                        }
+                    });
+                }
+            }
+        </script>
+
+    </main>
+
+    <!-- Reusable Dynamic Footer Injected by JS -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Core Script Files -->
+    <script src="../js/components.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>

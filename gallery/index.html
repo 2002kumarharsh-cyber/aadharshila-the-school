@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="View snapshots from annual sports events, patriotic functions, science exhibitions, and art competitions.">
+    <title>Photo & Video Gallery | Aadharshila The School</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Global CSS Stylesheets -->
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/components.css">
+</head>
+<body data-page-depth="1">
+    <!-- Reusable Dynamic Header Injected by JS -->
+    <div id="header-placeholder"></div>
+
+    <!-- Main Content Area -->
+    <main id="main-content">
+        <section class="page-hero">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <nav class="breadcrumb">
+                    <a href="../index.html">Home</a> &gt; <span>Gallery</span>
+                </nav>
+                <h1 class="page-title">Photo & Video Gallery</h1>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <div style="text-align: center; margin-bottom: var(--space-8);">
+                    <h2>Glimpses of School Events</h2>
+                    <p>Filter campus life snapshots across our 8 core co-curricular categories:</p>
+                </div>
+
+                <!-- Category Filters -->
+                <div class="filter-tabs">
+                    <button class="filter-btn is-active" data-filter="all">All Snaps</button>
+                    <button class="filter-btn" data-filter="Annual Function">Annual Function</button>
+                    <button class="filter-btn" data-filter="Sports Day">Sports Day</button>
+                    <button class="filter-btn" data-filter="Republic Day">Republic Day</button>
+                    <button class="filter-btn" data-filter="Independence Day">Independence Day</button>
+                    <button class="filter-btn" data-filter="Science Exhibition">Science Exhibit</button>
+                    <button class="filter-btn" data-filter="Art Competition">Art Competition</button>
+                    <button class="filter-btn" data-filter="Classroom Activities">Classroom Activity</button>
+                    <button class="filter-btn" data-filter="Educational Tours">Educational Tour</button>
+                </div>
+
+                <!-- Masonry Gallery Grid -->
+                <div class="gallery-grid">
+                    <div class="gallery-item " data-category="Annual Function">
+                        <img src="../assets/images/gallery_1.jpg" alt="Aadharshila School Annual Function event illustration" class="gallery-item-img" onerror="handleImageError(this)">
+                        <div class="gallery-placeholder" style="background-color: var(--color-border-light); width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; color: var(--color-text-muted);">
+                            <i class="fa-solid fa-image" style="font-size: var(--font-size-2xl); opacity: 0.5; margin-bottom: 5px;"></i>
+                            <span style="font-size: 10px;">Annual Function Slide #1</span>
+                        </div>
+                        <div class="gallery-item-overlay">
+                            <span class="gallery-item-cat">Annual Function</span>
+                            <span class="gallery-item-title">School Celebration Day Snapshot 1</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item " data-category="Sports Day">
+                        <img src="../assets/images/gallery_2.jpg" alt="Aadharshila School Sports Day event illustration" class="gallery-item-img" onerror="handleImageError(this)">
+                        <div class="gallery-placeholder" style="background-color: var(--color-border-light); width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; color: var(--color-text-muted);">
+                            <i class="fa-solid fa-image" style="font-size: var(--font-size-2xl); opacity: 0.5; margin-bottom: 5px;"></i>
+                            <span style="font-size: 10px;">Sports Day Slide #2</span>
+                        </div>
+                        <div class="gallery-item-overlay">
+                            <span class="gallery-item-cat">Sports Day</span>
+                            <span class="gallery-item-title">School Celebration Day Snapshot 2</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item span-h-2" data-category="Republic Day">
+                        <img src="../assets/images/gallery_3.jpg" alt="Aadharshila School Republic Day event illustration" class="gallery-item-img" onerror="handleImageError(this)">
+                        <div class="gallery-placeholder" style="background-color: var(--color-border-light); width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; color: var(--color-text-muted);">
+                            <i class="fa-solid fa-image" style="font-size: var(--font-size-2xl); opacity: 0.5; margin-bottom: 5px;"></i>
+                            <span style="font-size: 10px;">Republic Day Slide #3</span>
+                        </div>
+                        <div class="gallery-item-overlay">
+                            <span class="gallery-item-cat">Republic Day</span>
+                            <span class="gallery-item-title">School Celebration Day Snapshot 3</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item " data-category="Independence Day">
+                        <img src="../assets/images/gallery_4.jpg" alt="Aadharshila School Independence Day event illustration" class="gallery-item-img" onerror="handleImageError(this)">
+                        <div class="gallery-placeholder" style="background-color: var(--color-border-light); width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; color: var(--color-text-muted);">
+                            <i class="fa-solid fa-image" style="font-size: var(--font-size-2xl); opacity: 0.5; margin-bottom: 5px;"></i>
+                            <span style="font-size: 10px;">Independence Day Slide #4</span>
+                        </div>
+                        <div class="gallery-item-overlay">
+                            <span class="gallery-item-cat">Independence Day</span>
+                            <span class="gallery-item-title">School Celebration Day Snapshot 4</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item " data-category="Science Exhibition">
+                        <img src="../assets/images/gallery_5.jpg" alt="Aadharshila School Science Exhibition event illustration" class="gallery-item-img" onerror="handleImageError(this)">
+                        <div class="gallery-placeholder" style="background-color: var(--color-border-light); width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; color: var(--color-text-muted);">
+                            <i class="fa-solid fa-image" style="font-size: var(--font-size-2xl); opacity: 0.5; margin-bottom: 5px;"></i>
+                            <span style="font-size: 10px;">Science Exhibition Slide #5</span>
+                        </div>
+                        <div class="gallery-item-overlay">
+                            <span class="gallery-item-cat">Science Exhibition</span>
+                            <span class="gallery-item-title">School Celebration Day Snapshot 5</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item span-h-2" data-category="Art Competition">
+                        <img src="../assets/images/gallery_6.jpg" alt="Aadharshila School Art Competition event illustration" class="gallery-item-img" onerror="handleImageError(this)">
+                        <div class="gallery-placeholder" style="background-color: var(--color-border-light); width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; color: var(--color-text-muted);">
+                            <i class="fa-solid fa-image" style="font-size: var(--font-size-2xl); opacity: 0.5; margin-bottom: 5px;"></i>
+                            <span style="font-size: 10px;">Art Competition Slide #6</span>
+                        </div>
+                        <div class="gallery-item-overlay">
+                            <span class="gallery-item-cat">Art Competition</span>
+                            <span class="gallery-item-title">School Celebration Day Snapshot 6</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item " data-category="Classroom Activities">
+                        <img src="../assets/images/gallery_7.jpg" alt="Aadharshila School Classroom Activities event illustration" class="gallery-item-img" onerror="handleImageError(this)">
+                        <div class="gallery-placeholder" style="background-color: var(--color-border-light); width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; color: var(--color-text-muted);">
+                            <i class="fa-solid fa-image" style="font-size: var(--font-size-2xl); opacity: 0.5; margin-bottom: 5px;"></i>
+                            <span style="font-size: 10px;">Classroom Activities Slide #7</span>
+                        </div>
+                        <div class="gallery-item-overlay">
+                            <span class="gallery-item-cat">Classroom Activities</span>
+                            <span class="gallery-item-title">School Celebration Day Snapshot 7</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item " data-category="Educational Tours">
+                        <img src="../assets/images/gallery_8.jpg" alt="Aadharshila School Educational Tours event illustration" class="gallery-item-img" onerror="handleImageError(this)">
+                        <div class="gallery-placeholder" style="background-color: var(--color-border-light); width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; color: var(--color-text-muted);">
+                            <i class="fa-solid fa-image" style="font-size: var(--font-size-2xl); opacity: 0.5; margin-bottom: 5px;"></i>
+                            <span style="font-size: 10px;">Educational Tours Slide #8</span>
+                        </div>
+                        <div class="gallery-item-overlay">
+                            <span class="gallery-item-cat">Educational Tours</span>
+                            <span class="gallery-item-title">School Celebration Day Snapshot 8</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item span-h-2" data-category="Annual Function">
+                        <img src="../assets/images/gallery_9.jpg" alt="Aadharshila School Annual Function event illustration" class="gallery-item-img" onerror="handleImageError(this)">
+                        <div class="gallery-placeholder" style="background-color: var(--color-border-light); width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; color: var(--color-text-muted);">
+                            <i class="fa-solid fa-image" style="font-size: var(--font-size-2xl); opacity: 0.5; margin-bottom: 5px;"></i>
+                            <span style="font-size: 10px;">Annual Function Slide #9</span>
+                        </div>
+                        <div class="gallery-item-overlay">
+                            <span class="gallery-item-cat">Annual Function</span>
+                            <span class="gallery-item-title">School Celebration Day Snapshot 9</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item " data-category="Sports Day">
+                        <img src="../assets/images/gallery_10.jpg" alt="Aadharshila School Sports Day event illustration" class="gallery-item-img" onerror="handleImageError(this)">
+                        <div class="gallery-placeholder" style="background-color: var(--color-border-light); width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; color: var(--color-text-muted);">
+                            <i class="fa-solid fa-image" style="font-size: var(--font-size-2xl); opacity: 0.5; margin-bottom: 5px;"></i>
+                            <span style="font-size: 10px;">Sports Day Slide #10</span>
+                        </div>
+                        <div class="gallery-item-overlay">
+                            <span class="gallery-item-cat">Sports Day</span>
+                            <span class="gallery-item-title">School Celebration Day Snapshot 10</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item " data-category="Republic Day">
+                        <img src="../assets/images/gallery_11.jpg" alt="Aadharshila School Republic Day event illustration" class="gallery-item-img" onerror="handleImageError(this)">
+                        <div class="gallery-placeholder" style="background-color: var(--color-border-light); width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; color: var(--color-text-muted);">
+                            <i class="fa-solid fa-image" style="font-size: var(--font-size-2xl); opacity: 0.5; margin-bottom: 5px;"></i>
+                            <span style="font-size: 10px;">Republic Day Slide #11</span>
+                        </div>
+                        <div class="gallery-item-overlay">
+                            <span class="gallery-item-cat">Republic Day</span>
+                            <span class="gallery-item-title">School Celebration Day Snapshot 11</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item span-h-2" data-category="Independence Day">
+                        <img src="../assets/images/gallery_12.jpg" alt="Aadharshila School Independence Day event illustration" class="gallery-item-img" onerror="handleImageError(this)">
+                        <div class="gallery-placeholder" style="background-color: var(--color-border-light); width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; color: var(--color-text-muted);">
+                            <i class="fa-solid fa-image" style="font-size: var(--font-size-2xl); opacity: 0.5; margin-bottom: 5px;"></i>
+                            <span style="font-size: 10px;">Independence Day Slide #12</span>
+                        </div>
+                        <div class="gallery-item-overlay">
+                            <span class="gallery-item-cat">Independence Day</span>
+                            <span class="gallery-item-title">School Celebration Day Snapshot 12</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item " data-category="Science Exhibition">
+                        <img src="../assets/images/gallery_13.jpg" alt="Aadharshila School Science Exhibition event illustration" class="gallery-item-img" onerror="handleImageError(this)">
+                        <div class="gallery-placeholder" style="background-color: var(--color-border-light); width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; color: var(--color-text-muted);">
+                            <i class="fa-solid fa-image" style="font-size: var(--font-size-2xl); opacity: 0.5; margin-bottom: 5px;"></i>
+                            <span style="font-size: 10px;">Science Exhibition Slide #13</span>
+                        </div>
+                        <div class="gallery-item-overlay">
+                            <span class="gallery-item-cat">Science Exhibition</span>
+                            <span class="gallery-item-title">School Celebration Day Snapshot 13</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item " data-category="Art Competition">
+                        <img src="../assets/images/gallery_14.jpg" alt="Aadharshila School Art Competition event illustration" class="gallery-item-img" onerror="handleImageError(this)">
+                        <div class="gallery-placeholder" style="background-color: var(--color-border-light); width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; color: var(--color-text-muted);">
+                            <i class="fa-solid fa-image" style="font-size: var(--font-size-2xl); opacity: 0.5; margin-bottom: 5px;"></i>
+                            <span style="font-size: 10px;">Art Competition Slide #14</span>
+                        </div>
+                        <div class="gallery-item-overlay">
+                            <span class="gallery-item-cat">Art Competition</span>
+                            <span class="gallery-item-title">School Celebration Day Snapshot 14</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item span-h-2" data-category="Classroom Activities">
+                        <img src="../assets/images/gallery_15.jpg" alt="Aadharshila School Classroom Activities event illustration" class="gallery-item-img" onerror="handleImageError(this)">
+                        <div class="gallery-placeholder" style="background-color: var(--color-border-light); width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; color: var(--color-text-muted);">
+                            <i class="fa-solid fa-image" style="font-size: var(--font-size-2xl); opacity: 0.5; margin-bottom: 5px;"></i>
+                            <span style="font-size: 10px;">Classroom Activities Slide #15</span>
+                        </div>
+                        <div class="gallery-item-overlay">
+                            <span class="gallery-item-cat">Classroom Activities</span>
+                            <span class="gallery-item-title">School Celebration Day Snapshot 15</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item " data-category="Educational Tours">
+                        <img src="../assets/images/gallery_16.jpg" alt="Aadharshila School Educational Tours event illustration" class="gallery-item-img" onerror="handleImageError(this)">
+                        <div class="gallery-placeholder" style="background-color: var(--color-border-light); width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; color: var(--color-text-muted);">
+                            <i class="fa-solid fa-image" style="font-size: var(--font-size-2xl); opacity: 0.5; margin-bottom: 5px;"></i>
+                            <span style="font-size: 10px;">Educational Tours Slide #16</span>
+                        </div>
+                        <div class="gallery-item-overlay">
+                            <span class="gallery-item-cat">Educational Tours</span>
+                            <span class="gallery-item-title">School Celebration Day Snapshot 16</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item " data-category="Annual Function">
+                        <img src="../assets/images/gallery_17.jpg" alt="Aadharshila School Annual Function event illustration" class="gallery-item-img" onerror="handleImageError(this)">
+                        <div class="gallery-placeholder" style="background-color: var(--color-border-light); width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; color: var(--color-text-muted);">
+                            <i class="fa-solid fa-image" style="font-size: var(--font-size-2xl); opacity: 0.5; margin-bottom: 5px;"></i>
+                            <span style="font-size: 10px;">Annual Function Slide #17</span>
+                        </div>
+                        <div class="gallery-item-overlay">
+                            <span class="gallery-item-cat">Annual Function</span>
+                            <span class="gallery-item-title">School Celebration Day Snapshot 17</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item span-h-2" data-category="Sports Day">
+                        <img src="../assets/images/gallery_18.jpg" alt="Aadharshila School Sports Day event illustration" class="gallery-item-img" onerror="handleImageError(this)">
+                        <div class="gallery-placeholder" style="background-color: var(--color-border-light); width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; color: var(--color-text-muted);">
+                            <i class="fa-solid fa-image" style="font-size: var(--font-size-2xl); opacity: 0.5; margin-bottom: 5px;"></i>
+                            <span style="font-size: 10px;">Sports Day Slide #18</span>
+                        </div>
+                        <div class="gallery-item-overlay">
+                            <span class="gallery-item-cat">Sports Day</span>
+                            <span class="gallery-item-title">School Celebration Day Snapshot 18</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item " data-category="Republic Day">
+                        <img src="../assets/images/gallery_19.jpg" alt="Aadharshila School Republic Day event illustration" class="gallery-item-img" onerror="handleImageError(this)">
+                        <div class="gallery-placeholder" style="background-color: var(--color-border-light); width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; color: var(--color-text-muted);">
+                            <i class="fa-solid fa-image" style="font-size: var(--font-size-2xl); opacity: 0.5; margin-bottom: 5px;"></i>
+                            <span style="font-size: 10px;">Republic Day Slide #19</span>
+                        </div>
+                        <div class="gallery-item-overlay">
+                            <span class="gallery-item-cat">Republic Day</span>
+                            <span class="gallery-item-title">School Celebration Day Snapshot 19</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item " data-category="Independence Day">
+                        <img src="../assets/images/gallery_20.jpg" alt="Aadharshila School Independence Day event illustration" class="gallery-item-img" onerror="handleImageError(this)">
+                        <div class="gallery-placeholder" style="background-color: var(--color-border-light); width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; color: var(--color-text-muted);">
+                            <i class="fa-solid fa-image" style="font-size: var(--font-size-2xl); opacity: 0.5; margin-bottom: 5px;"></i>
+                            <span style="font-size: 10px;">Independence Day Slide #20</span>
+                        </div>
+                        <div class="gallery-item-overlay">
+                            <span class="gallery-item-cat">Independence Day</span>
+                            <span class="gallery-item-title">School Celebration Day Snapshot 20</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item span-h-2" data-category="Science Exhibition">
+                        <img src="../assets/images/gallery_21.jpg" alt="Aadharshila School Science Exhibition event illustration" class="gallery-item-img" onerror="handleImageError(this)">
+                        <div class="gallery-placeholder" style="background-color: var(--color-border-light); width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; color: var(--color-text-muted);">
+                            <i class="fa-solid fa-image" style="font-size: var(--font-size-2xl); opacity: 0.5; margin-bottom: 5px;"></i>
+                            <span style="font-size: 10px;">Science Exhibition Slide #21</span>
+                        </div>
+                        <div class="gallery-item-overlay">
+                            <span class="gallery-item-cat">Science Exhibition</span>
+                            <span class="gallery-item-title">School Celebration Day Snapshot 21</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item " data-category="Art Competition">
+                        <img src="../assets/images/gallery_22.jpg" alt="Aadharshila School Art Competition event illustration" class="gallery-item-img" onerror="handleImageError(this)">
+                        <div class="gallery-placeholder" style="background-color: var(--color-border-light); width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; color: var(--color-text-muted);">
+                            <i class="fa-solid fa-image" style="font-size: var(--font-size-2xl); opacity: 0.5; margin-bottom: 5px;"></i>
+                            <span style="font-size: 10px;">Art Competition Slide #22</span>
+                        </div>
+                        <div class="gallery-item-overlay">
+                            <span class="gallery-item-cat">Art Competition</span>
+                            <span class="gallery-item-title">School Celebration Day Snapshot 22</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item " data-category="Classroom Activities">
+                        <img src="../assets/images/gallery_23.jpg" alt="Aadharshila School Classroom Activities event illustration" class="gallery-item-img" onerror="handleImageError(this)">
+                        <div class="gallery-placeholder" style="background-color: var(--color-border-light); width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; color: var(--color-text-muted);">
+                            <i class="fa-solid fa-image" style="font-size: var(--font-size-2xl); opacity: 0.5; margin-bottom: 5px;"></i>
+                            <span style="font-size: 10px;">Classroom Activities Slide #23</span>
+                        </div>
+                        <div class="gallery-item-overlay">
+                            <span class="gallery-item-cat">Classroom Activities</span>
+                            <span class="gallery-item-title">School Celebration Day Snapshot 23</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item span-h-2" data-category="Educational Tours">
+                        <img src="../assets/images/gallery_24.jpg" alt="Aadharshila School Educational Tours event illustration" class="gallery-item-img" onerror="handleImageError(this)">
+                        <div class="gallery-placeholder" style="background-color: var(--color-border-light); width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; color: var(--color-text-muted);">
+                            <i class="fa-solid fa-image" style="font-size: var(--font-size-2xl); opacity: 0.5; margin-bottom: 5px;"></i>
+                            <span style="font-size: 10px;">Educational Tours Slide #24</span>
+                        </div>
+                        <div class="gallery-item-overlay">
+                            <span class="gallery-item-cat">Educational Tours</span>
+                            <span class="gallery-item-title">School Celebration Day Snapshot 24</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Reusable Dynamic Footer Injected by JS -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Core Script Files -->
+    <script src="../js/components.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>
