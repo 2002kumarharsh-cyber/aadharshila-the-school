@@ -124,6 +124,11 @@ img {
     .grid[style*="margin-top: var(--space-16)"] {
         margin-top: var(--space-8) !important;
     }
+
+    /* Reset layout order on mobile so that grid items stack in their natural source order (placing photos above descriptions) */
+    .grid > div[style*="order:"] {
+        order: unset !important;
+    }
 }
 
 /* 4. Asymmetrical & Custom Grids */

@@ -315,11 +315,15 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // 4. Inject Floating CTA Panel dynamically
-    const floatingCtaHtml = `
-    <a href="${rel}admissions/enquiry.html" class="floating-enquiry-btn reveal-on-scroll animate-fade-up" aria-label="Enquire Now">
-        <i class="fa-solid fa-paper-plane"></i>
-        <span>Enquire Now</span>
-    </a>
-    `;
-    document.body.insertAdjacentHTML('beforeend', floatingCtaHtml);
+    // Skip floating CTA injection on the enquiry page to avoid duplication and clutter
+    const isEnquiryPage = document.getElementById('enquiry-form') !== null || window.location.pathname.endsWith('enquiry.html');
+    if (!isEnquiryPage) {
+        const floatingCtaHtml = `
+        <a href="${rel}admissions/enquiry.html" class="floating-enquiry-btn reveal-on-scroll animate-fade-up" aria-label="Enquire Now">
+            <i class="fa-solid fa-paper-plane"></i>
+            <span>Enquire Now</span>
+        </a>
+        `;
+        document.body.insertAdjacentHTML('beforeend', floatingCtaHtml);
+    }
 });
