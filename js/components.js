@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <nav class="navbar" aria-label="Main Navigation">
                     <!-- Logo Block (Rendering SVG Logo) -->
                     <a href="${rel}index.html" class="logo-container">
-                        <img src="${rel}assets/brand/logo.svg" alt="Aadharshila The School Logo" style="height: auto; max-height: 72px; max-width: 320px; display: block;">
+                        <img src="${rel}assets/brand/logo.svg" alt="Aadharshila 'The School' Logo" style="height: auto; max-height: 72px; max-width: 320px; display: block;">
                     </a>
 
                     <!-- Desktop Navigation Menu -->
@@ -143,7 +143,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="mobile-drawer" id="mobile-drawer">
             <div class="drawer-header">
                 <a href="${rel}index.html" class="logo-container">
-                    <img src="${rel}assets/brand/logo.svg" alt="Aadharshila The School Logo" style="height: auto; max-height: 45px; max-width: 180px;">
+                    <img src="${rel}assets/brand/logo.svg" alt="Aadharshila 'The School' Logo" style="height: auto; max-height: 45px; max-width: 180px;">
                 </a>
                 <button class="drawer-close" id="drawer-close"><i class="fa-solid fa-xmark"></i></button>
             </div>
@@ -241,10 +241,10 @@ document.addEventListener('DOMContentLoaded', () => {
                     <!-- Brand Info -->
                     <div class="footer-brand">
                         <div class="footer-logo-box">
-                            <img src="${rel}assets/brand/logo.svg" alt="Aadharshila The School Logo" style="height: auto; max-height: 65px; max-width: 280px; filter: brightness(0) invert(1);">
+                            <img src="${rel}assets/brand/logo.svg" alt="Aadharshila 'The School' Logo" style="height: auto; max-height: 65px; max-width: 280px; filter: brightness(0) invert(1);">
                         </div>
                         <p>Affiliated with CBSE. Nurturing innovative thinking, structural design concepts, and character building in a nature-aligned global school environment.</p>
-                        <p style="font-size: 11px; font-style: italic; color: var(--color-secondary); margin-top: 10px;">"Hand in hand, we learn..."</p>
+                        <p style="font-size: 11px; font-style: italic; color: var(--color-secondary); margin-top: 10px;">"Hand in Hand, We Learn"</p>
                         <ul class="social-links">
                             <li><a href="#" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
                             <li><a href="#" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
@@ -285,11 +285,11 @@ document.addEventListener('DOMContentLoaded', () => {
                         <ul class="footer-contact-info">
                             <li>
                                 <i class="fa-solid fa-location-dot"></i>
-                                <span>Aadharshila Campus, Education Valley, Sector 12, New Delhi, Pin - 110075</span>
+                                <span>2 Km. Dattiyana Road, Chandpur, District Bijnor, Uttar Pradesh – 246725</span>
                             </li>
                             <li>
                                 <i class="fa-solid fa-phone"></i>
-                                <span>+91 98765 43210<br>011-2345678</span>
+                                <span>+91 98765 43210<br>01341-234567</span>
                             </li>
                             <li>
                                 <i class="fa-solid fa-envelope"></i>
@@ -303,7 +303,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <!-- Footer Bottom Copy Bar -->
             <div class="footer-bottom">
                 <div class="container footer-bottom-content">
-                    <span>&copy; 2026 Aadharshila The School. All Rights Reserved. (Demo Version)</span>
+                    <span>&copy; 2026 Aadharshila 'The School'. All Rights Reserved. (Demo Version)</span>
                     <div class="footer-bottom-links">
                         <a href="#" style="color: rgba(255,255,255,0.4); margin-right: 15px;">Privacy Policy</a>
                         <a href="#" style="color: rgba(255,255,255,0.4);">Terms of Use</a>
