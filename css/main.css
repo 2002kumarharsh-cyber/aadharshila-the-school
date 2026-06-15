@@ -83,6 +83,47 @@ img {
         padding-top: var(--space-12);
         padding-bottom: var(--space-12);
     }
+    
+    .container {
+        padding-left: var(--space-4) !important;
+        padding-right: var(--space-4) !important;
+    }
+
+    /* Scaling down page hero padding and headers for mobile viewports */
+    .page-hero {
+        padding: var(--space-12) 0 !important;
+    }
+
+    h1, .page-title {
+        font-size: clamp(1.8rem, 6vw, 2.5rem) !important;
+    }
+
+    h2 {
+        font-size: var(--font-size-xl) !important;
+    }
+
+    h3 {
+        font-size: var(--font-size-md) !important;
+    }
+
+    /* Override large inline gaps on grid elements to prevent mobile column squishing */
+    .grid[style*="gap: var(--space-16)"],
+    .grid[style*="gap: var(--space-12)"] {
+        gap: var(--space-6) !important;
+    }
+
+    .grid[style*="gap: var(--space-8)"] {
+        gap: var(--space-4) !important;
+    }
+
+    /* Override large inline top margins */
+    .grid[style*="margin-top: var(--space-20)"] {
+        margin-top: var(--space-10) !important;
+    }
+
+    .grid[style*="margin-top: var(--space-16)"] {
+        margin-top: var(--space-8) !important;
+    }
 }
 
 /* 4. Asymmetrical & Custom Grids */
@@ -106,7 +147,7 @@ img {
     .grid-asymmetric { grid-template-columns: 1fr; }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 768px) {
     .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
 }
 

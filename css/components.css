@@ -918,7 +918,7 @@
     grid-column: span 2;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 768px) {
     .form-grid {
         grid-template-columns: 1fr;
     }
@@ -1172,4 +1172,42 @@
     background-color: var(--color-secondary);
     border-color: var(--color-secondary);
     color: var(--color-surface);
+}
+
+/* =========================================================================
+   13. MOBILE & TABLET RESPONSIVE OVERRIDES
+   ========================================================================= */
+@media (max-width: 768px) {
+    /* Hide top bar contact details to prevent horizontal overflow and clutter */
+    .top-bar {
+        display: none !important;
+    }
+
+    /* Scale down the navigation header logo to fit nicely with hamburger menu */
+    .logo-container img {
+        max-width: 180px !important;
+        max-height: 40px !important;
+    }
+
+    /* Scale down footer logo to avoid overlapping/overflowing */
+    .footer-logo-box img {
+        max-width: 220px !important;
+        max-height: 50px !important;
+    }
+
+    /* Override inline fixed height of image wrappers to maintain proportion and prevent vertical distortion */
+    .image-wrapper[style*="height:"] {
+        height: auto !important;
+        aspect-ratio: 4/3 !important; /* Default layout aspect ratio for faculty/content images */
+    }
+
+    .page-hero .image-wrapper[style*="height:"] {
+        aspect-ratio: 16/9 !important; /* Standard landscape aspect ratio for hero main banners */
+    }
+
+    /* Support explicit custom aspect ratio classes if defined */
+    .image-wrapper[style*="height:"][data-ratio="1-1"] { aspect-ratio: 1/1 !important; }
+    .image-wrapper[style*="height:"][data-ratio="4-3"] { aspect-ratio: 4/3 !important; }
+    .image-wrapper[style*="height:"][data-ratio="3-2"] { aspect-ratio: 3/2 !important; }
+    .image-wrapper[style*="height:"][data-ratio="21-9"] { aspect-ratio: 21/9 !important; }
 }
