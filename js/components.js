@@ -25,8 +25,8 @@ document.addEventListener('DOMContentLoaded', () => {
             <div class="top-bar">
                 <div class="container top-bar-content">
                     <div class="top-bar-contact">
-                        <a href="tel:+919876543210"><i class="fa-solid fa-phone"></i> +91 98765 43210</a>
-                        <a href="mailto:info@aadharshilaschool.edu.in"><i class="fa-solid fa-envelope"></i> info@aadharshilaschool.edu.in</a>
+                        <a href="tel:+919411474777"><i class="fa-solid fa-phone"></i> +91 94114 74777</a>
+                        <a href="mailto:aadharshila.cpr@gmail.com"><i class="fa-solid fa-envelope"></i> aadharshila.cpr@gmail.com</a>
                     </div>
                     <div class="top-bar-links">
                         <a href="${rel}about/cbse-disclosure.html"><i class="fa-solid fa-file-shield"></i> CBSE Mandated Disclosure</a>
@@ -285,15 +285,15 @@ document.addEventListener('DOMContentLoaded', () => {
                         <ul class="footer-contact-info">
                             <li>
                                 <i class="fa-solid fa-location-dot"></i>
-                                <span>2 Km. Dattiyana Road, Chandpur, District Bijnor, Uttar Pradesh – 246725</span>
+                                <span>2 Km, Dattayana Road Chandpur, District Bijnor, Pin code 246724</span>
                             </li>
                             <li>
                                 <i class="fa-solid fa-phone"></i>
-                                <span>+91 98765 43210<br>01341-234567</span>
+                                <span>+91 94114 74777</span>
                             </li>
                             <li>
                                 <i class="fa-solid fa-envelope"></i>
-                                <span>info@aadharshilaschool.edu.in<br>admissions@aadharshilaschool.edu.in</span>
+                                <span>aadharshila.cpr@gmail.com</span>
                             </li>
                         </ul>
                     </div>
